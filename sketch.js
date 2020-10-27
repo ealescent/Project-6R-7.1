@@ -22,10 +22,10 @@ function draw() {
   circle(ball1.x, ball1.y, 50);
   // if the object hits the bottom of the canvas
   // make it go up instead of down
-  if (ball0.x >= width) {
-    ball0.dx = -0.70 * ball0.dx;
+  if (ball0.y >= width) {
+    ball0.dy = -0.70 * ball0.dx;
   }
-  if (ball1.x >= width) {
-    ball1.dx = -0.95 * ball1.dx;
+  if (ball1.y >= width) {
+    ball1.dy = -0.95 * ball1.dx;
   }
 }
