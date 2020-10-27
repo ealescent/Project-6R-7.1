@@ -1,15 +1,16 @@
-let ball = []
+let ball0;
+let ball1;
 function setup() {
   createCanvas(windowWidth, windowHeight);
   ball0 = {
     x: random(50),
     y: random(height),
-    dx: 0,
+    dy: 0,
   }
   ball1 = {
     x: random(50),
     y: random(height),
-    dx: 0,
+    dy: 0,
   }
 }
 function draw() {
