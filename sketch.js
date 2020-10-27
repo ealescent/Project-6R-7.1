@@ -29,3 +29,17 @@ function draw() {
     ball1.dx = -0.95 * ball1.dx;
   }
 }
+
+class Ball {
+  constructor(x) {
+    this.x = x;
+  }
+  // containsPoint(x, y) {}
+  // containsMouse() {}
+  update() {
+    // changes the properties
+  }
+  draw() {
+    // renders the object
+  }
+}
