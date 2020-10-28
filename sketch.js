@@ -20,8 +20,6 @@ function draw() {
   ball1.x += ball1.dx;
   ball1.dx += 0.15;
   circle(ball1.x, ball1.y, 50);
-  // if the object hits the bottom of the canvas
-  // make it go up instead of down
   if (ball0.x >= width) {
     ball0.dx = -0.70 * ball0.dx;
   }
@@ -31,8 +29,11 @@ function draw() {
 }
 
 class Ball {
-  constructor(x) {
+  constructor(x, y, dx, dy) {
     this.x = x;
+    this.y = y;
+    this.dx = dx;
+    this.dy = dy;
   }
   // containsPoint(x, y) {}
   // containsMouse() {}
